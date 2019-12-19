@@ -48,26 +48,6 @@ const alternateCases = (chars) => {
   return swapped
 }
 
-
-
-// switch (char) {
-//   case (char === 'l' || char === 'L'):
-//     swapped.push('L');
-//     nextCase = "lower"
-//     break;
-//   case (char === 'i' || char === 'I'):
-//     swapped.push('i');
-//     nextCase = "upper";
-//     break;
-//   case ()
-//       default:
-//     swapped.push(char);
-//     break;
-// }
-
-
-
-
 const handleSubmit = (e) => {
   e.preventDefault()
   const formText = document.querySelector("#input").value
