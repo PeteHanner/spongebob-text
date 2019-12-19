@@ -17,16 +17,27 @@ const convertText = (text) => {
   return newString;
 }
 
+// flip uppercase to lowercase and vice versa
+// except ambiguous characters
+// don't touch non-letters
+
 const swapCases = (chars) => {
-  // flip cases of chars as applicable
   const swapped = []
 
   for (const char of chars) {
     switch (char) {
+      case (char === 'l' || char === 'L'):
+        swapped.push('L')
+        break;
+      case (char === 'i' || char === 'I'):
+        swapped.push('i')
+        break;
       case (char === char.toUpperCase()):
         swapped.push(char.toLowerCase());
         break;
-      case (char ===)
+      case (char === char.toLowerCase()):
+        swapped.push(char.toUpperCase());
+        break;
       default:
         swapped.push(char);
         break;
