@@ -9,14 +9,10 @@ const showConvertedText = (text) => {
 }
 
 const convertText = (text) => {
-  const letters = splitString(text);
+  const letters = text.split("");
   const newLetters = swapCases(letters);
   const newString = joinString(newLetters);
   return newString;
-}
-
-const splitString = (text) => {
-  // divide string into characters
 }
 
 const swapCases = (charArr) => {
