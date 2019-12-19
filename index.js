@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("Page loaded")
+  const form = document.querySelector("#text-form")
+  form.onsubmit = (e) => handleSubmit(e)
 })
 
 // Add text with letters swapped to DOM
@@ -12,7 +13,7 @@ const showConvertedText = (text) => {
 // Use helper methods to turn inputted text 
 const convertText = (text) => {
   const letters = text.split("");
-  const newLetters = swapCases(letters);
+  const newLetters = alternateCases(letters);
   const newString = newLetters.join("");
   return newString;
 }
@@ -21,28 +22,12 @@ const convertText = (text) => {
 // except ambiguous characters
 // don't touch non-letters
 
-const swapCases = (chars) => {
-  const swapped = []
+const alternateCases = (chars) => {
 
-  for (const char of chars) {
-    switch (char) {
-      case (char === 'l' || char === 'L'):
-        swapped.push('L')
-        break;
-      case (char === 'i' || char === 'I'):
-        swapped.push('i')
-        break;
-      case (char === char.toUpperCase()):
-        swapped.push(char.toLowerCase());
-        break;
-      case (char === char.toLowerCase()):
-        swapped.push(char.toUpperCase());
-        break;
-      default:
-        swapped.push(char);
-        break;
-    }
-  }
+}
 
-  return swapped;
+const handleSubmit = (e) => {
+  e.preventDefault()
+  const formText = document.querySelector("#input").value
+  showConvertedText(formText)
 }

@@ -5,3 +5,9 @@
 #submit-btn {
   display: block;
 }
+
+#spongebob {
+  height: auto;
+  max-width: 20%;
+  padding: 2%;
+}
