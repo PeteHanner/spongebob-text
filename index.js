@@ -17,6 +17,21 @@ const convertText = (text) => {
   return newString;
 }
 
-const swapCases = (letters) => {
+const swapCases = (chars) => {
   // flip cases of chars as applicable
+  const swapped = []
+
+  for (const char of chars) {
+    switch (char) {
+      case (char === char.toUpperCase()):
+        swapped.push(char.toLowerCase());
+        break;
+      case (char ===)
+      default:
+        swapped.push(char);
+        break;
+    }
+  }
+
+  return swapped;
 }
