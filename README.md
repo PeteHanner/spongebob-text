@@ -1,4 +1,4 @@
-# SpongeBob Text Converter
+# [SpongeBob Text Converter](https://petehanner.github.io/spongebob-text/)
 
 <img src="https://i.imgflip.com/1pq988.jpg" width="250">
 
@@ -6,7 +6,7 @@ Some people on [/r/CollegeBasketball](https://www.reddit.com/r/CollegeBasketball
 
 Taking the time and energy to manually type out each comment in sPoNgEbOb FoNt seemed like dignifying it with too much effort... so naturally I went to the effort of making a web app to do it for me. 
 
-This is that web app.
+[This is that web app.](https://petehanner.github.io/spongebob-text/)
 ___
 
 Q: What would you say is your greatest weakness?
